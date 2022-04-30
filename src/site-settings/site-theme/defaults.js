@@ -49,6 +49,11 @@ const baseColor = {
   highlight: ""
 };
 
+/* =======================================================  
+*     Dapat yun mga properties na gagamitin              *
+*     based sa styled-system/css                         *
+*     https://www.npmjs.com/package/@styled-system/css   *
+======================================================== */
 export const defaultTheme = {
   colors: {
     ...baseColor,
@@ -74,7 +79,7 @@ export const defaultTheme = {
     }
   },
   // btnBorderRadius: '',
-  breakpoints: ["767px", "991px", "70em", "90em"],
+  breakpoints: ["768px", "992px", "1200px"],
   // space: [0, 4, 8, 10, 15, 20, 25, 30, 40, 56],
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
   // export const space = [0, 0.25, 0.5, 1, 1.5, 3].map(n => n + 'rem')
@@ -105,8 +110,8 @@ export const defaultTheme = {
     bolder: 900
   },
   fonts: {
-    body: "Lato, sans-serif",
-    heading: "Poppins, sans-serif",
+    body: "Open Sans, sans-serif",
+    heading: "Titillium Web, sans-serif",
     monospace: "Menlo, monospace"
   },
 
