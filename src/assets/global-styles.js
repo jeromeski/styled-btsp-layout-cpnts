@@ -96,6 +96,12 @@ export const GlobalStyles = createGlobalStyle(({ theme }) =>
     img: {
       maxWidth: "100%"
     },
+    "#root": {
+      height: "100%"
+    },
+    App: {
+      height: "100%"
+    },
     ...theme.globals
   })
 );

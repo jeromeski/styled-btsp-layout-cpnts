@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 
 export const Container = styled.div.attrs((props) => {
-  console.log("fluid -->", props.fluid);
+  console.log(props);
   return props.hasOwnProperty("fluid") ? { fluid: true } : "";
 })`
   margin-right: auto;
@@ -44,6 +44,9 @@ export const Container = styled.div.attrs((props) => {
       `
     );
   }}
+  &.h-100 {
+    height: 100%;
+  }
 `;
 
 /*
