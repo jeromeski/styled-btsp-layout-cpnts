@@ -2,8 +2,8 @@ import styled, { css } from "styled-components";
 import { get } from "styled-system";
 
 export const Container = styled.div.attrs((props) => {
-  console.log(props);
-  return { type: props.type || "fluid" };
+  console.log(props.fluid);
+  return props.fluid === true;
 })`
   margin-right: auto;
   margin-left: auto;
@@ -19,7 +19,7 @@ export const Container = styled.div.attrs((props) => {
   }
   ${(props) => {
     return (
-      props.type === "normal" &&
+      props.fluid === false &&
       css`
         margin-right: auto;
         margin-left: auto;
@@ -33,16 +33,21 @@ export const Container = styled.div.attrs((props) => {
         &:after {
           clear: both;
         }
-        @media (min-width: ${get(props.theme, "breakpoints[0]")}) {
+        @media (min-width: 768px) {
           width: 750px;
         }
-        @media (min-width: ${get(props.theme, "breakpoints[1]")}) {
+        @media (min-width: 992px) {
           width: 970px;
         }
-        @media (min-width: ${get(props.theme, "breakpoints[2]")}) {
+        @media (min-width: 1200px) {
           width: 1170px;
         }
       `
     );
   }}
 `;
+
+/*
+(min-width: ${get(props.theme, "breakpoints[0]")})
+
+*/
