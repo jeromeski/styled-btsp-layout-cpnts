@@ -1,9 +1,8 @@
 import styled, { css } from "styled-components";
-import { get } from "styled-system";
 
 export const Container = styled.div.attrs((props) => {
-  console.log(props.fluid);
-  return props.fluid === true;
+  console.log("fluid -->", props.fluid);
+  return props.hasOwnProperty("fluid") ? { fluid: true } : "";
 })`
   margin-right: auto;
   margin-left: auto;
@@ -19,7 +18,7 @@ export const Container = styled.div.attrs((props) => {
   }
   ${(props) => {
     return (
-      props.fluid === false &&
+      !props.fluid &&
       css`
         margin-right: auto;
         margin-left: auto;
