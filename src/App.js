@@ -11,7 +11,13 @@ export default function App() {
       <div className="App">
         <Container full>
           <Row>
-            <Col xs={2} sm={4} md={8} lg={10}>
+            <Col xs={2} sm={4} md={6} lg={12} bg={"blue.regular"}>
+              <h3>Col</h3>
+            </Col>
+            <Col xs={2} sm={4} md={6} lg={12} bg={"yellow.regular"}>
+              <h3>Col</h3>
+            </Col>
+            <Col xs={2} sm={4} md={6} lg={12} bg={"red"}>
               <h3>Col</h3>
             </Col>
           </Row>

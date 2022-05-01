@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components/macro";
 import { getColWidth } from "../utils";
+import { color, system, compose } from "styled-system";
 
 export const Col = styled.div`
   position: relative;
@@ -44,4 +45,5 @@ export const Col = styled.div`
       }
     `;
   }}
+  ${compose(color)}
 `;
