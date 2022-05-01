@@ -15,138 +15,66 @@ const cols = [
   100
 ];
 
-export const getColWidth = (props) => {
-  console.log(props);
-  if (
-    props.xs === 1 ||
-    props.sm === 1 ||
-    props.md === 1 ||
-    props.lg === 1 ||
-    props.xl === 1
-  ) {
+export const getColWidth = (value = 12) => {
+  console.log(value);
+  if (value === 1) {
     return css`
       width: ${cols[0] + "%"};
     `;
   }
-  if (
-    props.xs === 2 ||
-    props.sm === 2 ||
-    props.md === 2 ||
-    props.lg === 2 ||
-    props.xl === 2
-  ) {
+  if (value === 2) {
     return css`
       width: ${cols[1] + "%"};
     `;
   }
-  if (
-    props.xs === 3 ||
-    props.sm === 3 ||
-    props.md === 3 ||
-    props.lg === 3 ||
-    props.xl === 3
-  ) {
+  if (value === 3) {
     return css`
       width: ${cols[2] + "%"};
     `;
   }
-  if (
-    props.xs === 4 ||
-    props.sm === 4 ||
-    props.md === 4 ||
-    props.lg === 4 ||
-    props.xl === 4
-  ) {
+  if (value === 4) {
     return css`
       width: ${cols[3] + "%"};
     `;
   }
-  if (
-    props.xs === 5 ||
-    props.sm === 5 ||
-    props.md === 5 ||
-    props.lg === 5 ||
-    props.xl === 5
-  ) {
+  if (value === 5) {
     return css`
       width: ${cols[4] + "%"};
     `;
   }
-  if (
-    props.xs === 6 ||
-    props.sm === 6 ||
-    props.md === 6 ||
-    props.lg === 6 ||
-    props.xl === 6
-  ) {
+  if (value === 6) {
     return css`
       width: ${cols[5] + "%"};
     `;
   }
-  if (
-    props.xs === 7 ||
-    props.sm === 7 ||
-    props.md === 7 ||
-    props.lg === 7 ||
-    props.xl === 7
-  ) {
+  if (value === 7) {
     return css`
       width: ${cols[6] + "%"};
     `;
   }
-  if (
-    props.xs === 8 ||
-    props.sm === 8 ||
-    props.md === 8 ||
-    props.lg === 8 ||
-    props.xl === 8
-  ) {
+  if (value === 8) {
     return css`
       width: ${cols[7] + "%"};
     `;
   }
-  if (
-    props.xs === 9 ||
-    props.sm === 9 ||
-    props.md === 9 ||
-    props.lg === 9 ||
-    props.xl === 9
-  ) {
+  if (value === 9) {
     return css`
       width: ${cols[8] + "%"};
     `;
   }
-  if (
-    props.xs === 10 ||
-    props.sm === 10 ||
-    props.md === 10 ||
-    props.lg === 10 ||
-    props.xl === 10
-  ) {
+  if (value === 10) {
     return css`
       width: ${cols[9] + "%"};
     `;
   }
-  if (
-    props.xs === 11 ||
-    props.sm === 11 ||
-    props.md === 11 ||
-    props.lg === 11 ||
-    props.xl === 11
-  ) {
+  if (value === 11) {
     return css`
       width: ${cols[10] + "%"};
     `;
   }
-  if (
-    props.xs === 12 ||
-    props.sm === 12 ||
-    props.md === 12 ||
-    props.lg === 12 ||
-    props.xl === 12
-  ) {
+  if (value === 12) {
     return css`
-      width: ${cols[11] + "%"};
+      width: 100%;
     `;
   }
 };

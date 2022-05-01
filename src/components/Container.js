@@ -8,6 +8,7 @@ export const Container = styled.div.attrs((props) => {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
+  background-color: pink;
   &:after,
   &:before {
     content: " ";

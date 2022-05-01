@@ -11,9 +11,8 @@ export default function App() {
       <div className="App">
         <Container full>
           <Row>
-            <Col xs={2} md={5}>
-              <h1>Hello CodeSandbox</h1>
-              <h2>Start editing to see some magic happen!</h2>
+            <Col xs={2} sm={4} md={8} lg={10}>
+              <h3>Col</h3>
             </Col>
           </Row>
         </Container>
