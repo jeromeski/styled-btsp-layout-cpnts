@@ -15,7 +15,7 @@ export const Col = styled.div`
     const bpSM = props.theme.breakpoints[2];
     const bpMD = props.theme.breakpoints[3];
     const bpLG = props.theme.breakpoints[4];
-    const bpXL = props.theme.breakpoints[5];
+    // const bpXL = props.theme.breakpoints[5];
     return css`
       @media only screen and (min-width: 0px) and (max-width: ${bpXS}) {
         ${(props) => {
