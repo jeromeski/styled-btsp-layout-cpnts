@@ -99,7 +99,7 @@ export const GlobalStyles = createGlobalStyle(({ theme }) =>
     "#root": {
       height: "100%"
     },
-    App: {
+    ".App": {
       height: "100%"
     },
     ...theme.globals

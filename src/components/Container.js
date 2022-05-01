@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components/macro";
 
 export const Container = styled.div.attrs((props) => {
-  console.log(props);
+  console.log("Container", props);
   return props.hasOwnProperty("fluid") ? { fluid: true } : "";
 })`
   margin-right: auto;
@@ -44,9 +44,14 @@ export const Container = styled.div.attrs((props) => {
       `
     );
   }}
-  &.h-100 {
-    height: 100%;
-  }
+  ${(props) => {
+    return (
+      props.full &&
+      css`
+        height: 100%;
+      `
+    );
+  }}
 `;
 
 /*
