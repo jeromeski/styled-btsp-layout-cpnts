@@ -16,7 +16,6 @@ const cols = [
 ];
 
 export const getColWidth = (value = 12) => {
-  console.log(value);
   if (value === 1) {
     return css`
       width: ${cols[0] + "%"};

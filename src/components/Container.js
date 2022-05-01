@@ -1,7 +1,6 @@
 import styled, { css } from "styled-components/macro";
 
 export const Container = styled.div.attrs((props) => {
-  console.log("Container", props);
   return props.hasOwnProperty("fluid") ? { fluid: true } : "";
 })`
   margin-right: auto;

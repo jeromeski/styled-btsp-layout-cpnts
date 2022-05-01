@@ -9,7 +9,7 @@ export default function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
       <div className="App">
-        <Container full>
+        <Container fluid full>
           <Row>
             <Col xs={2} sm={4} md={6} lg={12} bg={"blue.regular"}>
               <h3>Col</h3>
